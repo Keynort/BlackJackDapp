@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <div class="layout">
+        <h2>Dealer Hand</h2>
+        <div class="wrapper">
+            <div class="cards" id="dealer">
+            </div>
+        </div>
+        <h2>Player Hand</h2>
+        <div class="wrapper">
+            <div class="cards" id="player">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container" id="button-container">
+                <button id="hit">Hit</button>
+                <button id="pass">Pass</button>
+            </div>
+        </div>
+        <div class="background" id="notice">
+        <div class="notice">
+            <p></p>
+            <button id="next-hand">Deal Next Hand</button>
+            <button id="next-hand"
+            onclick="window.location.href = 'index.html' ;"
+            role="button">Exit</button>
+
+        </div>
+        </div>
+
+        <button class="exit-button" onclick="exitPage()">Exit</button>
+    </div>
+</body>
+
+</html>
